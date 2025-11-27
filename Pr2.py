@@ -64,3 +64,9 @@ def convert():
               result = value_in_m3 / conversion[to_unit]
 
               label_res.configure(text=f"Результат: {result:.6f} {to_unit}", fg="green")
+
+
+button = tk.Button(root, text="Конвертировать", font=("Arial", 14),fg="green", command=convert)
+button.pack(pady=80)
+
+root.mainloop()
